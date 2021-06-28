@@ -37,8 +37,28 @@ def main():
     base = 999
     digits = set(range(base))
     #heads up, no clue why the following line works. dunno why it wants 0*math.floor(x/100). i tried 100*math.floor(x/100) but that worked too much? confusing
-    print({x:[math.floor(x/100), math.floor(x/10)-10*math.floor(x/100), x-0*math.floor(x/100)-10*math.floor(x/10)] for x in digits})# 5.25
-
+    #print({x:[math.floor(x/100), math.floor(x/10)-10*math.floor(x/100), x-0*math.floor(x/100)-10*math.floor(x/10)] for x in digits})# 5.25
+    def twice(z):
+        return 2*z
+    print(twice(2))
+    dct = {'a':'A', 'b':'B', 'c':'C'}
+    L = ['b', 'c', 'a']
+    length = len(L)
+    def dict2list(L):
+        output = []
+        for i in range(length):
+            output.append(dct[L[i]])
+        return output
+    print(dict2list(L))# 5.30
+    keylist = ['a', 'b', 'c']
+    L = ['A', 'B', 'C']
+    length = len(keylist)
+    def list2dict(L, keylist):
+        output = {}
+        for i in range(len(keylist)):
+            output[keylist[i]] = L[i]
+        return output
+    print(list2dict(L, keylist))# 5.31
 
 
 
