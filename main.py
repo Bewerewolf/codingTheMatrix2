@@ -1,3 +1,7 @@
+import math
+from plotting import plot
+
+
 def main():
     #print("hola")
     # This is a dictionary
@@ -33,7 +37,7 @@ def main():
     #print({x:x*x for x in range(99)})# 5.23
     D = {'red', 'white', 'blue'}
     #print({x:x for x in D})# 5.24
-    import math
+
     base = 999
     digits = set(range(base))
     #heads up, no clue why the following line works. dunno why it wants 0*math.floor(x/100). i tried 100*math.floor(x/100) but that worked too much? confusing
@@ -57,7 +61,6 @@ def main():
             output[keylist[i]] = L[i]
         return output
     #print(list2dict(L, keylist))# 5.31
-    from plotting import plot
     S = {2+2j, 3+2j, 1.75+1j, 2+1j, 2.25+1j, 2.5+1j, 2.75+1j, 3+1j, 3.25+1j}
     plot(S, 4)
 
