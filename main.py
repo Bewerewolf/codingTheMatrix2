@@ -1,5 +1,4 @@
 import math
-from plotting import plot
 
 
 def main():
@@ -61,9 +60,8 @@ def main():
             output[keylist[i]] = L[i]
         return output
     #print(list2dict(L, keylist))# 5.31
-    S = {2+2j, 3+2j, 1.75+1j, 2+1j, 2.25+1j, 2.5+1j, 2.75+1j, 3+1j, 3.25+1j}
-    plot(S, 4)
-
+    #S = {2+2j, 3+2j, 1.75+1j, 2+1j, 2.25+1j, 2.5+1j, 2.75+1j, 3+1j, 3.25+1j}
+    #plot(S, 4)
 
 
 
