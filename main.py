@@ -19,7 +19,7 @@ def main():
     for d in dlist:
         newlist.append(d[k])
     #print(newlist) # 5.21
-    dlist = [{'Frodo':'Elijah', 'Bilbo':'Ian'}, {'Thorin':'Richard', 'Bilbo':'Martin'}]
+    dlist = [{'Frodo': 'Elijah', 'Bilbo': 'Ian'}, {'Thorin': 'Richard', 'Bilbo': 'Martin'}]
     newlist = []
     k = 'Frodo'
     count = 0
@@ -40,25 +40,26 @@ def main():
     #print({x:[math.floor(x/100), math.floor(x/10)-10*math.floor(x/100), x-0*math.floor(x/100)-10*math.floor(x/10)] for x in digits})# 5.25
     def twice(z):
         return 2*z
-    print(twice(2))
+    #print(twice(2))
     dct = {'a':'A', 'b':'B', 'c':'C'}
     L = ['b', 'c', 'a']
-    length = len(L)
     def dict2list(L):
         output = []
-        for i in range(length):
-            output.append(dct[L[i]])
+        for i in L:
+            output.append(dct[i])
         return output
-    print(dict2list(L))# 5.30
+    #print(dict2list(L))# 5.30
     keylist = ['a', 'b', 'c']
     L = ['A', 'B', 'C']
-    length = len(keylist)
     def list2dict(L, keylist):
         output = {}
         for i in range(len(keylist)):
             output[keylist[i]] = L[i]
         return output
-    print(list2dict(L, keylist))# 5.31
+    #print(list2dict(L, keylist))# 5.31
+    from plotting import plot
+    S = {2+2j, 3+2j, 1.75+1j, 2+1j, 2.25+1j, 2.5+1j, 2.75+1j, 3+1j, 3.25+1j}
+    plot(S, 4)
 
 
 
